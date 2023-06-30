@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// fonts
+$font-inter: "Inter", sans-serif;
+$font-robo: "Roboto", sans-serif;
+
+$brand: #fed700;
+$w: #fff;
+$black: #29323a;
+$blue: #0062bd;
+$red: #dc3545;
+$gray: #f5f5f5;
+body {
+  font-family: $font-inter;
+  font-weight: 400;
+  color: $black;
+  background-color: #f3f3f3 !important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  padding: 0;
+  font-family: $font-inter !important;
+}
+// top section
+.top {
+  background: $red;
+  color: $gray;
+  .top-left {
+    font-size: 13px;
+    a {
+      text-decoration: none;
+      color: $gray;
+      border-left: 1px solid rgba(188, 187, 187, 0.75);
+      i {
+        font-size: 16px;
+        padding: 0 5px;
+      }
+      &:hover {
+        color: $black !important;
+      }
+    }
+  }
+}
+// navbar section
+.navbar {
+  .nav-logo {
+    font-size: 40px;
+    font-weight: 700;
+    span {
+      color: $brand;
+    }
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+  padding-left: 12px !important;
+  &:hover {
+    color: $red;
+  }
+}
+.dropdown-menu {
+  border-top: 2px solid $brand !important;
+}
+.ph {
+  i {
+    color: $brand;
+    font-size: 30px;
+  }
+}
+.cc {
+  font-size: 14px;
+  span {
+    font-size: 14px;
+  }
+}
+// header-buttom
+.header-bottom {
+  position: relative;
+  background-color: $brand;
+  .text-shop {
+    i {
+      font-weight: bold !important;
+      font-size: 16px;
+    }
+    color: $black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .form-control {
+    outline: 0;
+    border: 0;
+    height: 30px;
+    background: $w;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .btn {
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    top: 4px;
+    left: 61%;
+    height: 30px;
+  }
+  .icon {
+    i {
+      padding: 0 5px;
+      font-size: 18px;
+      color: $black;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+// home catageroy
+.home-cat {
+  h6 {
+    padding: 5px 10px;
+    background-color: $black;
+    .home-text {
+      i {
+        font-size: 18px;
+      }
+      color: $w;
+      &:hover {
+        color: $brand;
+      }
+    }
+  }
+  .cat-list{
+    li{
+      padding: 5px 8px;
+      &:hover{
+      .link-cat{
+      color:$red !important;
+      
+      }
+    }
+    }
+  }
+}
+
+// slider2 section
+.link-title {
+  font-size: 12px;
+  font-weight: bold;
+}
+.bg-1 {
+  background-color: #c6c4c45d;
+}
+.box-slider2 {
+  overflow: hidden;
+
+  img {
+    transition: 0.9s;
+    border-radius: 50%;
+    width: 43%;
+    height: 110px !important;
+  }
+}
+.react-multiple-carousel__arrow {
+  min-width: 30px;
+  min-height: 10px;
+}
+.react-multiple-carousel__arrow--left {
+  left: 25px;
+}
+.react-multiple-carousel__arrow--right {
+  right: 25px;
+}
+// media-box section
+.media-box {
+  overflow: hidden;
+  img {
+    width: 100%;
+    transition: 0.5s;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+// feature product section
+.feature {
+  h4 {
+    position: relative;
+    &::before {
+      content: "";
+      width: 207px;
+      border: 1px solid $red;
+      position: absolute;
+      top: 52px;
+      left: 0px;
+    }
+  }
+  .btn{
+    &:hover{
+      background: $black;
+      color: $w;
+      border: 0;
+    }
+  }
+}
+
+// link section
+.link-box {
+  overflow: hidden;
+  margin: 0 20px;
+  .link {
+    transition: 0.9s;
+  }
+  &:hover {
+    .link {
+      color: $black;
+      transform: scale(1.2);
+    }
+  }
+}
+
+// common data section
+.fproduct {
+  .card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: normal !important;
+    height: 380px;
+    .f-icon {
+      position: absolute;
+      top: 15px;
+      left: 12px;
+      display: none;
+      a {
+        background-color: $red;
+        color: $w;
+        border: 0;
+      }
+    }
+    &:hover {
+      .f-icon {
+        display: block;
+      }
+    }
+
+    .img-box {
+      img {
+        width: 120px;
+        transition: 0.9s;
+        overflow: hidden;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .tt {
+      font-size: 13px;
+      &:hover {
+        color: $red !important;
+      }
+    }
+  }
+}
+
+// spectifice section
+.feature-specifice {
+  h4 {
+    position: relative;
+    &::before {
+      content: "";
+      width: 120px;
+      border: 1px solid $red;
+      position: absolute;
+      top: 53px;
+      left: 0px;
+    }
+  }
+  .btn{
+    &:hover{
+      background: $black;
+      color: $w;
+      border: 0;
+    }
+  }
+}
+
+// hero banner section
+.hero-box {
+  overflow: hidden;
+  img {
+    transition: 0.9s;
+  }
+  &:hover {
+    img {
+      transform: scale(1.1, -1.1);
+    }
+  }
+}
+
+// footer section
+.footer {
+  background:$black;
+  color: $w;
+  .f-logo {
+    font-size: 30px;
+    font-weight: 700;
+    span {
+      color: $brand;
+      font-size: 20px;
+    }
+  }
+
+  .footer-buttom {
+    background: rgba(128, 128, 128, 0.981);
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer-text {
+    li {
+      font-size: 15px;
+      line-height: 25px;
+      a{
+      color: $gray !important;
+        &:hover{
+          color: $brand !important;
+        }
+      }
+    }
+  }
+  .email {
+    border: none;
+    outline: none;
+  }
+}
+.main-text {
+  li {
+    font-family: $font-inter;
+    font-size: 14px;
+    line-height: 25px;
+    span{
+      font-size: 12px;
+      color: $brand !important;
+    }
+  }
+}
+.social-icon {
+  i {
+    padding: 10px;
+    background: $blue;
+    margin-right: 5px;
+    color: $w;
+    &:hover {
+      background-color: $red;
+    }
+  }
+}
+.sub-footer{
+  &:hover{
+    background: black !important;
+    color: $w;
+    border: 0;
+  }
+}
+
+
+// details section 
+.details{
+  .card{
+    overflow: hidden;
+    object-fit: contain;
+    background-color: #FFFFFF !important;
+    
+    img{
+      transition: 0.9s;
+      padding: 70px;
+    }
+    &:hover{
+      img{
+        transform: scale(1.2);
+      }
+    }
+  }
+  h1{
+    font-size: 23px !important;
+  }
+  p{
+    font-size: 14px;
+    color:gray;
+   
+  }
+  .stock{
+    padding: 5px 15px;
+    background: green !important;
+    border: 1px solid green;
+    border-radius: 20px;
+    color: $w;
+  }
+  .qtg{
+    border-bottom: 1px solid gray;
+    input{
+      width: 50px;
+      padding: 0 10px;
+      outline: 0;
+      border: 1px solid gray;
+      height: 30px;
+    }
+  }
+  .btn{
+    &:hover{
+      background: $gray !important;
+      color: $black !important;
+    }
+  }
+}
+//responsive
+
+@media (min-width: 0) and (max-width: 768px) {
+  .fproduct .card {
+    position: relative;
+    left: 63px;
+  }
+  .box-slider2 img{
+    width: 54%;
+    height: 90px !important;
+  }
+  .feature h4 {
+    &::before {
+      top: 50px;
+      width: 185px;
+    }
+  }
+  .footer-buttom,
+  .top,
+  .header-bottom .text-shop {
+    display: none;
+  }
+  .header-bottom .form-control {
+    width: 64%;
+  }
+  .header-bottom .btn {
+    left: 54%;
+  }
+  .resp-search {
+    display: flex;
+  }
+  .header-bottom {
+    position: relative;
+    .header-icon {
+      position: absolute;
+      top: 4px;
+      right: 0;
+    }
+  }
+  .feature-specifice {
+    h4 {
+      position: relative;
+      &::before {
+        top: 49px;
+        width: 110px;
+      }
+    }
+  }
+}
+
